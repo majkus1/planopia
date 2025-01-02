@@ -1,0 +1,784 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+.company-txt {
+	font-family: "Titillium Web", serif !important;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+	color: white !important;
+	letter-spacing: 3.5px;
+	margin-bottom: 0;
+	font-size: 30px !important;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.navbar-toggler span {
+	color: white !important;
+}
+
+.navbar {
+	background-color: #213555 !important;
+}
+
+.sidebar {
+	background-color: #213555 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Titillium Web", serif !important;
+	font-size: 20px !important;
+	font-weight: bold;
+	color: #213555 !important;
+}
+
+p, span {
+	font-family: "Titillium Web", serif !important;
+	font-size: 17px !important;
+	color: #213555 !important;
+}
+
+.fc-event-title {
+	font-family: "Titillium Web", serif !important;
+	font-size: 17px;
+}
+
+.selected-roles span {
+	color: white !important;
+	padding-right: 5px;
+}
+
+.col-md-8, .card-body, .container {
+	padding-right: 0px !important;
+}
+
+.fc-icon {
+	color: white !important;
+}
+
+.fc-toolbar-title {
+	font-size: 17px !important;
+}
+
+.fc .fc-toolbar {
+	align-items: center !important;
+}
+
+.logo-sidebar .company-txt {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 30px;
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	transform: translateX(-100%);
+	transition: transform 0.3s ease;
+	overflow-y: auto;
+	z-index: 1050; /* Ensure sidebar is above other content */
+	height: 100%;
+}
+
+.sidebar.opened {
+	transform: translateX(0);
+}
+
+.fc .fc-day-disabled {
+	background-color: var(--fc-neutral-bg-color) !important;
+	pointer-events: none;
+	cursor: none;
+}
+
+.event-content.event-workday span {
+	color: white !important;
+}
+
+.closesidebar {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background-color: transparent;
+	color: rgba(255, 255, 255, 0.75);
+	border: 1px solid transparent;
+	width: 55px;
+	height: 39px;
+	font-size: 22px;
+}
+
+.btns-pages {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.btns-pages a {
+	max-width: 300px;
+}
+
+.admins-links {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	margin-top: 15px;
+}
+
+.content {
+	padding-left: 0;
+	transition: padding-left 0.3s ease;
+}
+
+#root > div > div > div.container.my-5.d-flex.justify-content-center.align-items-center {
+	margin-top: 0px !important;
+	height: 100%;
+	width: 100%;
+}
+
+#root > div > div.container.my-5.d-flex.justify-content-center.align-items-center > div {
+	width: 100%;
+}
+
+#root
+	> div
+	> div.container.my-5.d-flex.justify-content-center.align-items-center
+	> div
+	> div
+	> div
+	> div.card-header.text-dark
+	> h5 {
+	color: #1f2d3d !important;
+}
+
+#root > div > div.container.my-5.d-flex.justify-content-center.align-items-center {
+	margin-bottom: 0px !important;
+	margin-top: 25px !important;
+}
+
+#role {
+	margin-left: 10px;
+}
+
+@media (min-width: 1024px) {
+	.sidebar.opened {
+		transform: translateX(0);
+	}
+
+	.btn-pdf {
+		display: block !important;
+	}
+
+	.btn-print-leavereq {
+		display: block !important;
+	}
+
+	.sidebar.closed {
+		transform: translateX(-100%);
+	}
+
+	.sidebar {
+		transform: translateX(0);
+	}
+
+	.content {
+		padding-left: 250px;
+	}
+
+	.sidebar .btn.d-md-none {
+		display: none; /* Hide the toggle button in desktop view */
+	}
+	#pdf-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		font-size: 25px !important;
+	}
+	#pdf-content h2 {
+		margin-bottom: 60px !important;
+	}
+	.allrequests {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.allrequests .firsttworow {
+		display: flex;
+		align-items: center;
+		gap: 50px;
+	}
+}
+
+.sidebar-header {
+	font-size: 1.2em;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu-toggle {
+	cursor: pointer;
+}
+
+/* body {
+	background-color: #F9F6E6 !important;
+} */
+
+.fc-daygrid-day-frame {
+	cursor: pointer;
+}
+
+#root > div > div > div.sidebar.bg-dark.text-white > div.p-2 > button {
+	position: absolute;
+	bottom: 0;
+	border-radius: 0;
+}
+
+.fc-theme-standard td {
+	background-color: white !important;
+}
+
+select {
+	border: 0.5px solid black;
+	background-color: white;
+}
+
+
+#root > div > div > div.sidebar.bg-dark.text-white.opened > a > img,
+#root > div > div > div.sidebar.bg-dark.text-white > a > img {
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+#root > div > div > div.container.my-5.d-flex.justify-content-center.align-items-center > div > div {
+	padding-top: 10px;
+}
+
+#root > div > div > div.container.my-5.d-flex.justify-content-center.align-items-center {
+	margin-bottom: 0 !important;
+}
+
+#root > div > div.container-fluid.p-0 > nav > button {
+	display: block !important;
+}
+
+#root > div > div.container-fluid.p-0 > nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.card-header h5 {
+	color: #1f2d3d !important;
+}
+
+.alllogin {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+}
+
+.login-logo {
+	margin-bottom: 0 !important;
+}
+
+.login-logo div {
+	/* background-color: black; */
+	display: flex;
+	justify-content: center;
+	height: 50px;
+}
+
+.login-logo div img {
+	padding: 10px 0px;
+}
+
+.sidebar-header {
+	justify-content: center !important;
+}
+
+/* #root > div > div.container-fluid.p-0 > div > div.sidebar-header.p-3.d-flex.justify-content-between.align-items-center {
+	justify-content: center !important;
+} */
+
+#root > div > div.container.my-5 {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	margin-top: 25px !important;
+	margin-bottom: 0px !important;
+	margin-left: -10px;
+}
+
+#root > div > div.container.my-5 > div {
+	width: 100%;
+}
+
+/* #root > div > div.container-fluid.p-0 > button {
+  display: none;
+} */
+
+@media (max-width: 2000px) {
+	.d-md-none {
+		display: flex !important;
+		justify-content: space-between;
+	}
+	#root > div > div.container-fluid.p-0 > nav > button {
+		display: none;
+	}
+	.navbar-toggler {
+		display: block;
+	}
+}
+
+@media (min-width: 2000px) {
+	.d-md-none {
+		display: none !important;
+	}
+	.content.p-3 {
+		margin-left: 300px;
+	}
+
+	.container-fluid .openclose .close {
+		font-weight: bold;
+		color: black;
+		text-align: center;
+		font-size: 16px;
+	}
+	.container-fluid .openclose .open {
+		font-weight: bold;
+		text-align: center;
+		font-size: 16px;
+		color: black;
+	}
+}
+
+.admin-section {
+	margin-top: 30px;
+	max-width: 250px;
+}
+
+/* .container-fluid {
+    height: 100vh;
+} */
+
+.bg-dark,
+.bg-dark > a {
+	color: #1f2d3d !important;
+}
+
+h5 {
+	color: white !important;
+}
+
+.reset-password-container,
+.set-pass {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh !important;
+	justify-content: center;
+}
+
+th,
+td {
+	padding: 10px;
+}
+
+.username-logs-click {
+	cursor: pointer;
+}
+
+.event-workday {
+	background-color: blue;
+	color: white;
+	padding: 2px 5px;
+	border-radius: 4px;
+}
+
+.event-absence {
+	background-color: green;
+	color: white;
+	padding: 2px 5px;
+	border-radius: 4px;
+}
+
+.event-content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.event-delete {
+	margin-left: 17px;
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+}
+
+.fc .fc-scroller-liquid-absolute {
+	cursor: pointer;
+}
+
+.fc .fc-day-other .fc-daygrid-day-top {
+	display: none;
+	opacity: 0 !important;
+	pointer-events: none !important;
+	z-index: -2;
+}
+
+.month-calendar {
+	margin: 10px;
+	border: 1px solid #ddd;
+	width: calc(100% / 3 - 20px); /* Trzy kalendarze w rzędzie */
+}
+
+.allemplo {
+	width: calc(100% / 1 - 20px) !important;
+}
+
+.fc-today-button {
+	display: none !important;
+}
+
+.fc-toolbar-title {
+	text-transform: uppercase;
+}
+
+.fc .fc-toolbar {
+	align-items: start;
+}
+
+.resume-month-work {
+	margin-top: 30px;
+}
+
+.resume-month-work h3 {
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+.fc .fc-daygrid-body {
+	z-index: 0;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+	margin-bottom: 0;
+}
+
+.fc .fc-toolbar {
+	justify-content: start;
+}
+
+#logstable table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#logstable th,
+td {
+	padding: 10px;
+	text-align: left;
+}
+
+#leave-request-form {
+	margin-top: 50px !important;
+	margin: 10px;
+}
+
+#userandlogs {
+	margin-top: 50px;
+}
+
+#formleave {
+	margin-bottom: 40px;
+	font-size: 18px;
+}
+
+#formleave div {
+	margin-bottom: 5px;
+}
+
+#formleave select,
+#formleave input,
+#formleave textarea {
+	margin-left: 5px;
+}
+
+#leave-planner {
+	margin-top: 25px;
+}
+
+hr {
+	max-width: 800px;
+	margin-left: 0;
+	margin-bottom: 30px;
+}
+
+.ReactModal__Content {
+	max-height: 450px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	max-width: 500px;
+}
+
+.fc .fc-toolbar.fc-header-toolbar {
+	padding-left: 0;
+}
+
+#all-leaveplans {
+	margin-top: 25px;
+}
+
+#list-employee {
+	margin-top: 35px;
+	margin-left: 15px;
+}
+
+.btn-pdf {
+	display: none;
+	position: absolute;
+	right: 10px;
+	top: 80px;
+}
+
+#calendars-works-review {
+	margin-top: 50px;
+}
+
+#leave-requests-review {
+	margin-top: 30px;
+	padding: 10px;
+}
+
+#pdf-leave-request {
+	margin-top: 10px;
+}
+
+#pdf-content {
+	font-size: 21px;
+}
+
+.btn-print-leavereq {
+	display: none;
+	position: absolute;
+	top: 80px;
+	right: 10px;
+}
+
+.ReactModal__Overlay {
+	background-color: rgba(255, 255, 255, 0.61) !important;
+	z-index: 10;
+}
+
+.resume-month {
+	margin-top: 15px;
+}
+
+.resume-month h3 {
+	font-size: 20px;
+	text-decoration: underline;
+}
+
+.fc-header-toolbar {
+	display: flex;
+	flex-direction: row;
+}
+
+.autocol.status-accepted {
+    color: green !important;
+}
+.autocol.status-pending {
+    color: blue !important;
+}
+.autocol.status-rejected {
+    color: red !important;
+}
+
+.padr {
+	padding-right: 20px !important;
+}
+
+.resumecales {
+	font-weight: normal;
+}
+
+.event-absence span {
+	color: white !important;
+}
+
+.fc-event-start {
+	min-height: 30px;
+}
+
+@media (max-width: 350px) {
+	.logo-sidebar .img-fluid {
+		width: 120px !important;
+	}
+}
+
+@media (max-width: 576px) {
+	#logstable table thead {
+		display: none;
+	}
+
+	#logstable table tr {
+		display: block;
+		margin-bottom: 30px;
+	}
+
+	#logstable table td {
+		display: block;
+		text-align: left;
+		position: relative;
+		padding-left: 50%;
+		word-wrap: break-word;
+		white-space: normal;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	#logstable table td::before {
+		content: attr(data-label);
+		position: absolute;
+		left: 0;
+		width: 40%; /* Szerokość etykiety */
+		padding-left: 10px;
+		font-weight: bold;
+		text-align: left;
+		white-space: nowrap; /* Zapobiega zawijaniu nagłówka */
+		margin-bottom: 5px;
+	}
+}
+
+@media (max-width: 768px) {
+	.month-calendar {
+		width: calc(100% / 2 - 20px); /* Dwa kalendarze w rzędzie */
+	}
+	.event-content {
+		flex-direction: column;
+		width: 100%;
+	}
+	.fc-daygrid-event {
+		white-space: break-spaces;
+	}
+	.event-content span,
+	.fc-event-title {
+		white-space: normal; /* Pozwala na łamanie tekstu */
+		word-break: break-all; /* Łamie długie słowa */
+		overflow-wrap: anywhere; /* Dodatkowe wsparcie dla przeglądarek */
+		display: block; /* Zapewnia, że span zajmuje pełną szerokość i łamie się na kolejne linie */
+	}
+}
+
+@media (max-width: 480px) {
+	.month-calendar {
+		width: 100%; /* Jeden kalendarz na małym ekranie */
+	}
+}
+
+@media (min-width: 768px) {
+	.resume-month-work {
+		padding-left: 25px;
+	}
+	.event-content {
+		width: 100%;
+	}
+	.event-content span,
+	.fc-event-title {
+		white-space: normal; /* Pozwala na łamanie tekstu */
+		word-break: break-all; /* Łamie długie słowa */
+		overflow-wrap: anywhere; /* Dodatkowe wsparcie dla przeglądarek */
+		display: block; /* Zapewnia, że span zajmuje pełną szerokość i łamie się na kolejne linie */
+	}
+}
+
+@media (min-width: 2000px) {
+	.sidebar {
+		width: 250px;
+	}
+	.closesidebar {
+		display: none;
+	}
+	.ReactModal__Content {
+		margin-left: 250px;
+	}
+	#userandlogs {
+		margin-left: 310px;
+		width: calc(100% - 350px);
+	}
+	#leave-request-form {
+		margin-left: 320px;
+	}
+	.container {
+		margin-left: 280px !important;
+		width: calc(100% - 280px);
+	}
+	#leave-planner {
+		margin-left: 300px;
+	}
+	#all-leaveplans,
+	#list-employee,
+	#calendars-works-review,
+	#leave-requests-review,
+	#pdf-leave-request {
+		margin-left: 290px;
+	}
+	.btn-pdf,
+	.btn-print-leavereq {
+		top: 10px;
+	}
+	.set-pass {
+		margin-left: 0 !important;
+	}
+}
+
+/* @media (min-width: 1024px) and (max-width: 1260px) {
+  #root > div > div.container.my-5 {
+    margin-left: 100px;
+  }
+  #root > div > div.container.my-5 > div, #root > div > div.container.my-5 {
+    width: calc(100% - 100px);
+  }
+} */
+
+/* Ograniczenie długości tekstu w event-workday i event-absence na urządzeniach mobilnych */
+@media (max-width: 550px) {
+	.event-workday span,
+	.event-absence span {
+		display: inline-block;
+		max-width: 5ch;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	.flexcol {
+		display: flex;
+		flex-direction: column;
+	}
+}
+#calendars-works-review .fc-event-title {
+	display: inline-block;
+	max-width: 7ch;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@media (min-width: 1200px) {
+	.resume-month-work {
+		margin-top: 270px;
+	}
+	.resume-month {
+		margin-top: 70px;
+	}
+}
